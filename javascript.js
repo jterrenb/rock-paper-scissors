@@ -19,6 +19,10 @@ function getHumanChoice() {
 }
 
 function playRound(humanChoice, computerChoice) {
+    humanChoice = humanChoice.toLowerCase();
+    let firstLetterHuman = humanChoice.slice (0,1);
+    firstLetterHuman = firstLetterHuman.toUpperCase();
+    humanChoice = firstLetterHuman + humanChoice.slice(1);
     if ( humanChoice === computerChoice) {
         console.log( "Draw, no points this time!");
     } else if(humanChoice === "Rock" && computerChoice === "Scissors" ||
