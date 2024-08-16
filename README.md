@@ -10,10 +10,9 @@ Pseudocode:
     - Creará una variable a la que se le asignará un número random del 1 al 3 (incluidos).
     - Hará un SWITCH que en función del número, asignará a otra variable el string "Rock", "Paper" o "Scissors".
     - La función devolverá el resultado de esa última variable.
-- Función que pida la elección de la persona y almacene en una variable su valor.
+- Función (getHumanChoice) que pida la elección de la persona y almacene en una variable su valor.
     Esta función hará lo siguiente:
     - Solicitará mediante prompt la elección del jugador.
-    - Comprobará que la elección es una de las 3 posibilidades correctas, "Rock", "Paper", "Scissors", de no ser correcta mostrará un mensaje de error y solicitará de nuevo el prompt.
     - La función devolverá el valor del Prompt.
 - Función que compare las elecciones y determine un ganador.
     Esta función hará lo siguiente:
