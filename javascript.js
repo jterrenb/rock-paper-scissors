@@ -17,3 +17,17 @@ function getComputerChoice() {
 function getHumanChoice() {
     return prompt("Choose Rock, Paper or Scissors");
 }
+
+function playRound(humanChoice, computerChoice) {
+    if ( humanChoice === computerChoice) {
+        console.log( "Draw, no points this time!");
+    } else if(humanChoice === "Rock" && computerChoice === "Scissors" ||
+            humanChoice === "Paper" && computerChoice === "Rock" ||
+            humanChoice === "Scissors" && computerChoice === "Paper") {
+                console.log( `You Win! ${humanChoice} beats ${computerChoice}`);
+                humanScore++;
+    } else {
+        console.log( `You loose! ${computerChoice} beats ${humanChoice}`);
+        computerScore++;
+    }
+}
