@@ -47,25 +47,23 @@ function compareChoices(humanChoice, computerChoice) {
     } else if(humanChoice === "Rock" && computerChoice === "Scissors" ||
             humanChoice === "Paper" && computerChoice === "Rock" ||
             humanChoice === "Scissors" && computerChoice === "Paper") {
-                console.log( `You Win! ${humanChoice} beats ${computerChoice}`);
+                text = `You Win! ${humanChoice} beats ${computerChoice}`;
                 humanScore++;
     } else {
-        console.log( `You loose! ${computerChoice} beats ${humanChoice}`);
+        text =`You loose! ${computerChoice} beats ${humanChoice}`;
         computerScore++;
     }
 }
 
 function playRound(humanChoice) {
     computerChoice = getComputerChoice();
-    compareChoices( humanChoice, computerChoice)
+    compareChoices( humanChoice, computerChoice);
     displayScore();
-    console.log(humanChoice);
-    console.log(computerChoice);
 }
 
 const btn = document.querySelectorAll("button");
 btn.forEach((button) => {
     button.addEventListener("click", () => {
-        console.log(button.className);
+        playRound(button.className);
     });
 });
