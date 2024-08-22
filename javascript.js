@@ -17,9 +17,10 @@ function getComputerChoice() {
             return "Scissors";
     }
 }
+
 function displayScore() {
     let textScore = document.querySelector(".score");
-    textScore.textContent += `\n Round ${numRound}: ${text} \nScore: Player ${humanScore}   Computer ${computerScore}`;
+    textScore.textContent += `\n Round ${numRound}: ${text} \nScore: Player ${humanScore}   Computer ${computerScore}\n`;
     numRound++;
     if (numRound>5) {
         winner = whoWon();
@@ -29,6 +30,7 @@ function displayScore() {
         computerScore = 0;
     }
 }
+
 function whoWon () {
     if (humanScore>computerScore) {
         return "Player";
