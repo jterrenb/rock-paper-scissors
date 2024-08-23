@@ -21,7 +21,10 @@ function getComputerChoice() {
 function displayScore() {
     let textScore = document.querySelector(".score");
     numRound++;
-    textScore.textContent += `\n Round ${numRound}: ${text} \nScore: Player ${humanScore}   Computer ${computerScore}\n`;
+    textScore.textContent += `
+    Round ${numRound}: ${text} 
+    Score: Player ${humanScore}   Computer ${computerScore}
+    `;
     if (numRound>=5) {
         winner = whoWon();
         textScore.textContent += `Winner: ${winner}`;
