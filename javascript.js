@@ -46,9 +46,9 @@ function whoWon () {
 function compareChoices(humanChoice, computerChoice) {
     if ( humanChoice === computerChoice) {
         text = "Draw, no points this time!";
-    } else if(humanChoice === "Rock" && computerChoice === "Scissors" ||
-            humanChoice === "Paper" && computerChoice === "Rock" ||
-            humanChoice === "Scissors" && computerChoice === "Paper") {
+    } else if(humanChoice === "rock" && computerChoice === "scissors" ||
+            humanChoice === "paper" && computerChoice === "rock" ||
+            humanChoice === "scissors" && computerChoice === "paper") {
                 text = `You Win! ${humanChoice} beats ${computerChoice}`;
                 humanScore++;
     } else {
